@@ -2,17 +2,14 @@ import { initializeApp } from 'firebase/app';
 import { getAuth, signInWithEmailAndPassword, signOut as fbSignOut, onAuthStateChanged, User } from 'firebase/auth';
 import { getFirestore, doc, setDoc, onSnapshot, getDoc } from 'firebase/firestore';
 
-// ─── SUBSTITUA com as configurações do seu projeto Firebase ───────────────────
-// Acesse: console.firebase.google.com → seu projeto → Configurações → Seus apps
 const firebaseConfig = {
-  apiKey: "COLE_AQUI_SUA_API_KEY",
-  authDomain: "SEU_PROJETO.firebaseapp.com",
-  projectId: "SEU_PROJETO",
-  storageBucket: "SEU_PROJETO.appspot.com",
-  messagingSenderId: "000000000000",
-  appId: "1:000000000000:web:xxxxxxxxxxxxxxxxxxxx"
+  apiKey: "AIzaSyC2Hyj1EtGudoF1iIFIvvuxM5CJ_4Q6-VM",
+  authDomain: "trip-planner-cde86.firebaseapp.com",
+  projectId: "trip-planner-cde86",
+  storageBucket: "trip-planner-cde86.firebasestorage.app",
+  messagingSenderId: "754142749377",
+  appId: "1:754142749377:web:c5412555cf15ec34c1ea40"
 };
-// ─────────────────────────────────────────────────────────────────────────────
 
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
