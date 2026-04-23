@@ -401,6 +401,12 @@ body {
 }
 .login-btn:hover { background: var(--forest); }
 .login-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+.google-btn {
+  background: white; color: #3c4043;
+  border: 1.5px solid var(--gray-200);
+  display: flex; align-items: center; justify-content: center;
+}
+.google-btn:hover { background: var(--gray-50); }
 .login-error {
   background: #FDECEA; border: 1px solid #F5C6CB;
   color: #8B1A1A; border-radius: 8px; padding: 10px 14px;
