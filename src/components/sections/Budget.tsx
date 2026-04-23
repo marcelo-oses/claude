@@ -43,7 +43,7 @@ export function Budget({ data, config, updateData, showToast }: Props) {
       ...prev,
       budget: {
         ...prev.budget,
-        [catId]: { ...(prev.budget as Record<string, unknown>)[catId] as object, [field]: value }
+        [catId]: { ...(prev.budget as unknown as Record<string, unknown>)[catId] as object, [field]: value }
       }
     }));
   }
@@ -147,7 +147,7 @@ export function Budget({ data, config, updateData, showToast }: Props) {
       {/* Categories */}
       <div className="budget-grid">
         {config.budgetCategories.map(cat => {
-          const catData = (budget as Record<string, unknown>)[cat.id] as { meta: string; pago: string; notas: string; milhas?: boolean };
+          const catData = (budget as unknown as Record<string, unknown>)[cat.id] as { meta: string; pago: string; notas: string; milhas?: boolean };
           const milhas  = !!catData?.milhas;
           const meta    = parseBRL(catData?.meta);
           const pago    = milhas ? meta : parseBRL(catData?.pago);

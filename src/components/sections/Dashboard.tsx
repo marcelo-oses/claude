@@ -20,7 +20,7 @@ export function Dashboard({ data, config, countdown }: Props) {
 
   let meta = 0, pago = 0;
   config.budgetCategories.forEach(c => {
-    const cat = (budget as Record<string, unknown>)[c.id] as { meta: string; pago: string; milhas?: boolean };
+    const cat = (budget as unknown as Record<string, unknown>)[c.id] as { meta: string; pago: string; milhas?: boolean };
     const m = parseBRL(cat?.meta);
     const p = cat?.milhas ? m : parseBRL(cat?.pago);
     meta += m; pago += p;
@@ -111,7 +111,7 @@ export function Dashboard({ data, config, countdown }: Props) {
       <div className="card">
         <div className="card-title">📊 Orçamento por Categoria</div>
         {config.budgetCategories.map(cat => {
-          const catData = (budget as Record<string, unknown>)[cat.id] as { meta: string; pago: string; milhas?: boolean };
+          const catData = (budget as unknown as Record<string, unknown>)[cat.id] as { meta: string; pago: string; milhas?: boolean };
           const milhas  = !!catData?.milhas;
           const m       = parseBRL(catData?.meta);
           const p       = milhas ? m : parseBRL(catData?.pago);

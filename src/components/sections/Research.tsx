@@ -41,7 +41,7 @@ export function Research({ data, config, updateData }: Props) {
 
   function updateItem(category: 'hoteis' | 'restaurantes' | 'atracoes', idx: number, field: string, value: string | boolean) {
     updateData(prev => {
-      const arr = [...prev.research[category]] as Record<string, unknown>[];
+      const arr = [...prev.research[category]] as unknown as Record<string, unknown>[];
       arr[idx] = { ...arr[idx], [field]: value };
       return { ...prev, research: { ...prev.research, [category]: arr } };
     });

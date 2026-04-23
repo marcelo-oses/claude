@@ -16,6 +16,6 @@ export const auth = getAuth(app);
 export const db = getFirestore(app);
 export const googleProvider = new GoogleAuthProvider();
 
-export { onAuthStateChanged, signInWithRedirect, getRedirectResult, fbSignOut, User };
+export { onAuthStateChanged, signInWithRedirect, getRedirectResult, fbSignOut };
 export { doc, setDoc, onSnapshot, getDoc };
 export type { User };
