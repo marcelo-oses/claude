@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { auth, onAuthStateChanged } from './firebase';
+import { auth, onAuthStateChanged, getRedirectResult } from './firebase';
 import type { User } from './firebase';
 import { Login } from './components/Login';
 import { TripList } from './components/TripList';
@@ -15,6 +15,9 @@ export default function App() {
   const [activeTripId, setActiveTripId] = useState<string | null>(null);
 
   useEffect(() => {
+    // Garante que o resultado de redirect (fallback do iOS Safari) seja processado
+    getRedirectResult(auth).catch(() => {});
+
     const unsub = onAuthStateChanged(auth, (u) => {
       setUser(u);
       setScreen(u ? 'trips' : 'login');
