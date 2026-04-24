@@ -1,29 +1,20 @@
-import { useState, useEffect } from 'react';
-import { auth, googleProvider, signInWithRedirect, getRedirectResult } from '../firebase';
+import { useState } from 'react';
+import { auth, googleProvider, signInWithPopup } from '../firebase';
 
 export function Login({ onLogin }: { onLogin: () => void }) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
-  useEffect(() => {
-    setLoading(true);
-    getRedirectResult(auth)
-      .then(result => {
-        if (result?.user) onLogin();
-      })
-      .catch(() => {
-        setError('Erro ao fazer login com Google. Tente novamente.');
-      })
-      .finally(() => setLoading(false));
-  }, [onLogin]);
-
   async function handleGoogleLogin() {
     setLoading(true);
     setError('');
     try {
-      await signInWithRedirect(auth, googleProvider);
-    } catch {
-      setError('Erro ao iniciar login com Google. Tente novamente.');
+      await signInWithPopup(auth, googleProvider);
+      // onAuthStateChanged em App.tsx detecta o login e troca a tela
+    } catch (e: any) {
+      if (e.code !== 'auth/popup-closed-by-user') {
+        setError('Erro ao fazer login com Google. Tente novamente.');
+      }
       setLoading(false);
     }
   }
