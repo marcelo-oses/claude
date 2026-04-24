@@ -1,37 +1,28 @@
 # Planejador de Viagens — Guia de Configuração
 
 ## O que você vai precisar
-- Conta Google (gratuita) para criar o projeto Firebase
+- Conta Google para fazer login no Firebase Console
 - ~20 minutos para configurar tudo
 
 ---
 
-## 1. Criar o projeto Firebase
+## 1. Ativar Google Sign-In no Firebase
 
-1. Acesse **console.firebase.google.com**
-2. Clique em **"Criar um projeto"**
-3. Nome: `planejador-viagens` (ou qualquer nome)
-4. Desative Google Analytics (opcional) → Criar projeto
-
----
-
-## 2. Configurar Autenticação
-
-1. No menu lateral → **Authentication** → **Começar**
-2. Aba **"Sign-in method"** → ativar **E-mail/senha**
-3. Aba **"Users"** → **"Adicionar usuário"**
-   - Crie UM usuário que vocês dois vão compartilhar:
-   - E-mail: `sua-familia@gmail.com` (qualquer e-mail)
-   - Senha: escolha uma senha forte
+1. Acesse **console.firebase.google.com** → projeto `trip-planner-cde86`
+2. Menu lateral → **Authentication** → **Sign-in method**
+3. Clique em **Google** → ative o toggle → **Salvar**
+4. Vá na aba **Settings** → role até **Authorized domains**
+5. Confirme que `localhost` está na lista (já vem por padrão)
+6. Depois do deploy no Vercel, volte aqui e adicione o domínio `seu-app.vercel.app`
 
 ---
 
-## 3. Configurar Firestore
+## 2. Criar o Firestore
 
-1. No menu lateral → **Firestore Database** → **Criar banco de dados**
+1. Menu lateral → **Firestore Database** → **Criar banco de dados**
 2. Selecione **"Iniciar no modo de produção"**
-3. Escolha a região: `southamerica-east1` (São Paulo)
-4. Após criar, vá em **Regras** e cole:
+3. Escolha a região: `southamerica-east1` (São Paulo) → **Avançar** → **Criar**
+4. Após criar, clique em **Regras** e cole:
 
 ```
 rules_version = '2';
@@ -48,75 +39,55 @@ Clique em **Publicar**.
 
 ---
 
-## 4. Obter as credenciais do app
-
-1. No console Firebase → ícone de engrenagem → **Configurações do projeto**
-2. Role até **"Seus apps"** → clique em **"</>"** (Web app)
-3. Nome do app: `planejador-viagens` → Registrar app
-4. Copie o objeto `firebaseConfig` que aparece
-
----
-
-## 5. Colar credenciais no código
-
-Abra o arquivo `src/firebase.ts` e substitua:
-
-```typescript
-const firebaseConfig = {
-  apiKey: "COLE_AQUI_SUA_API_KEY",
-  authDomain: "SEU_PROJETO.firebaseapp.com",
-  ...
-};
-```
-
-Pelos valores reais que você copiou no passo 4.
-
----
-
-## 6. Instalar dependências e buildar
+## 3. Buildar o app localmente (opcional — só para testar)
 
 ```bash
 npm install
 npm run build
+npm run preview
 ```
+
+Acesse `http://localhost:4173` e teste o login com Google.
 
 ---
 
-## 7. Fazer o deploy (Vercel — gratuito)
+## 4. Deploy no Vercel (gratuito)
 
-### Opção A: Via Vercel CLI
-```bash
-npx vercel
-```
-Siga as instruções → vai gerar uma URL como `https://seu-app.vercel.app`
+### Via GitHub (recomendado — deploy automático a cada commit)
 
-### Opção B: Via GitHub + Vercel (recomendado)
-1. Crie um repositório privado no GitHub e faça push deste código
-2. Acesse **vercel.com** → New Project → importe o repo
-3. Deploy automático ✓
+1. Acesse **vercel.com** → faça login com GitHub
+2. Clique em **"New Project"** → importe o repositório `claude`
+3. Deixe as configurações padrão (Vercel detecta Vite automaticamente)
+4. Clique em **Deploy**
+5. Após o deploy, copie a URL gerada (ex: `https://claude-xxx.vercel.app`)
 
 ---
 
-## 8. Instalar no iPhone
+## 5. Adicionar domínio do Vercel no Firebase
 
-1. Abra o Safari no iPhone (deve ser o Safari — não funciona no Chrome)
-2. Acesse a URL do app (ex: `https://seu-app.vercel.app`)
-3. Faça login com o e-mail e senha que criou no Firebase
+1. Volte ao **console.firebase.google.com** → **Authentication** → **Settings** → **Authorized domains**
+2. Clique em **Add domain**
+3. Cole a URL do Vercel (ex: `claude-xxx.vercel.app`) — **sem o `https://`**
+4. Salvar
+
+Sem isso, o login com Google vai dar erro de `auth/unauthorized-domain`.
+
+---
+
+## 6. Instalar no iPhone
+
+1. Abra o **Safari** no iPhone (deve ser o Safari — não funciona no Chrome)
+2. Acesse a URL do Vercel
+3. Faça login com sua conta Google
 4. Toque no ícone **"Compartilhar"** (quadrado com seta para cima)
 5. Role e toque **"Adicionar à Tela de Início"**
 6. Confirme → o ícone do app aparece na tela inicial!
 
-Repita os passos 1–6 no celular da sua esposa com as mesmas credenciais.
+Repita os passos no celular da sua esposa. Cada um faz login com a própria conta Google — os dados são compartilhados em tempo real via Firestore.
 
 ---
 
-## Adicionar a viagem Orlando 2027
-
-Quando quiser adicionar a viagem de Orlando, envie o HTML para o Claude e ele vai criar o arquivo `src/data/orlando2027.ts` e adicioná-lo em `src/data/tripConfigs.ts`.
-
----
-
-## Sincronização em tempo real
+## 7. Sincronização em tempo real
 
 - Qualquer mudança feita em um celular aparece automaticamente no outro em ~1 segundo
 - Funciona com WiFi e dados móveis
@@ -124,8 +95,14 @@ Quando quiser adicionar a viagem de Orlando, envie o HTML para o Claude e ele va
 
 ---
 
+## Adicionar a viagem Orlando 2027
+
+Quando quiser adicionar Orlando, me mande os detalhes da viagem (voos, hotel, itinerário) e eu crio o arquivo `src/data/orlando2027.ts` e adiciono em `src/data/tripConfigs.ts` automaticamente.
+
+---
+
 ## Custos
 
-- Firebase Firestore: **gratuito** para uso pessoal (limite de 50k leituras/dia — muito mais que suficiente)
-- Vercel Hosting: **gratuito** para projetos pessoais
-- **Custo total: R$ 0,00** ✓
+- Firebase: **gratuito** (50k leituras/dia — muito mais que suficiente)
+- Vercel: **gratuito** para projetos pessoais
+- **Total: R$ 0,00** ✓
