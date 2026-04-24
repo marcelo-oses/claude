@@ -15,14 +15,20 @@ export default function App() {
   const [activeTripId, setActiveTripId] = useState<string | null>(null);
 
   useEffect(() => {
-    // Garante que o resultado de redirect (fallback do iOS Safari) seja processado
-    getRedirectResult(auth).catch(() => {});
+    let unsub: (() => void) | undefined;
 
-    const unsub = onAuthStateChanged(auth, (u) => {
-      setUser(u);
-      setScreen(u ? 'trips' : 'login');
-    });
-    return unsub;
+    // No iOS Safari o signInWithPopup vira redirect — precisa processar o
+    // resultado ANTES de ouvir onAuthStateChanged, senão dispara com null
+    getRedirectResult(auth)
+      .catch(() => {})
+      .finally(() => {
+        unsub = onAuthStateChanged(auth, (u) => {
+          setUser(u);
+          setScreen(u ? 'trips' : 'login');
+        });
+      });
+
+    return () => unsub?.();
   }, []);
 
   if (screen === 'loading') {
