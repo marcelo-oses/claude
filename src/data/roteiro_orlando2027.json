@@ -1,0 +1,194 @@
+{
+  "trip": {
+    "startDate": "2027-09-07",
+    "endDate": "2027-09-24",
+    "adults": 2,
+    "children": 2,
+    "childAges": "Lucas e Henrique",
+    "notes": "18 dias em Orlando — Setembro 2027. Família: 2 adultos + Lucas e Henrique. Regra de ouro: nunca 2 parques grandes em dias seguidos — sempre 1 dia de respiro entre eles. Setembro pós-Labor Day (6/Set): filas menores, preços melhores, EPCOT Food & Wine Festival!"
+  },
+  "rate": 5.70,
+  "items": [],
+  "itinerary": {
+    "2027-09-07": {
+      "type": "viagem",
+      "activity": "✈️ Chegada em Orlando (MCO)",
+      "notes": "Voo chegando. Retirar bagagens, pegar carro alugado no aeroporto (essencial para a família — Lake Wales, Wild Florida, etc). Check-in no hotel. Walmart ou Publix para abastecer água, frutas e lanches para a semana. Jantar leve perto do hotel. Descanso total — nada de parque hoje!"
+    },
+    "2027-09-08": {
+      "type": "disney",
+      "activity": "🏰 Magic Kingdom",
+      "notes": "PARQUE 1/8 — Chegue 45min antes da abertura! Prioridade: Tron Lightcycle Run e Seven Dwarfs Mine Train via Lightning Lane logo de manhã. Space Mountain, Haunted Mansion, Pirates of the Caribbean. Almoço em Columbia Harbour House. À tarde: Fantasyland com Lucas e Henrique. Dica: em setembro pode chover ~30min à tarde — aproveite para pausar num restaurante."
+    },
+    "2027-09-09": {
+      "type": "outro",
+      "activity": "🐊 Wild Florida Airboat + Winter Park Boat Tour",
+      "notes": "DIA DE RESPIRO — Natureza sem filas! Manhã: Wild Florida Airboats em Kenansville (1h de Orlando). Airboat pelos Everglades da Flórida Central — jacarés, garças, águias carecas. Em setembro a vida selvagem está ativa e o calor é intenso (experiência autêntica da Flórida). Tarde: Winter Park Scenic Boat Tour (1h de passeio tranquilo pelos lagos desde 1938). Jantar em Park Avenue — ótimos restaurantes ao ar livre."
+    },
+    "2027-09-10": {
+      "type": "disney",
+      "activity": "🌍 EPCOT — Food & Wine Festival! 🍷",
+      "notes": "PARQUE 2/8 — Setembro = início do EPCOT Food & Wine Festival! Quiosques de comida e drinks de mais de 30 países ao redor do World Showcase Lagoon. Prioridade de atrações: Guardians of the Galaxy: Cosmic Rewind (usar Lightning Lane) e Remy's Ratatouille Adventure (Lucas e Henrique vão adorar!). Tarde: passear pelo World Showcase provando comidas internacionais. Jantar no Le Cellier (Canada) ou Via Napoli (Italy) — reserve meses antes!"
+    },
+    "2027-09-11": {
+      "type": "outro",
+      "activity": "🐬 Discovery Cove — Nadar com Golfinhos",
+      "notes": "DIA ESPECIAL — Parque mais exclusivo de Orlando (máx 1.300 pessoas/dia). Ritmo completamente diferente dos parques temáticos: tranquilo, sem filas, all-inclusive. Café da manhã e almoço INCLUSOS! Programa: snorkel no recife de corais com raias e peixes tropicais, rio preguiçoso, aviário com aves exóticas e o grande destaque — nadar com golfinhos (pacote premium). Lucas e Henrique vão lembrar disso para sempre! RESERVE COM MESES DE ANTECEDÊNCIA — esgota rápido."
+    },
+    "2027-09-12": {
+      "type": "universal",
+      "activity": "🎢 Universal Studios Florida",
+      "notes": "PARQUE 3/8 — Chegue 30min antes da abertura. Prioridade: Escape from Gringotts (Harry Potter — Diagon Alley) logo cedo. Depois: Revenge of the Mummy, Men in Black. Área do Simpsons (Springfield) para almoçar — Homer's beer e donuts gigantes! Tarde: Fast & Furious. Jantar no Leaky Cauldron dentro de Diagon Alley. Butterbeer gelado no calor de setembro = perfeição!"
+    },
+    "2027-09-13": {
+      "type": "outro",
+      "activity": "🏖️ Cocoa Beach — Praia do Atlântico",
+      "notes": "PRAIA 1 — A praia mais próxima de Orlando! 1h pela SR-528 (Beachline Expressway) sentido leste. Costa do Atlântico com ondas moderadas — bom para surf e bodyboard! Destaques: Lori Wilson Park (estacionamento gratuito, playground, acesso à praia), Cocoa Beach Pier (1,3km sobre o oceano com restaurantes, lojas e bar), Ron Jon Surf Shop (loja icônica de 24h — Lucas e Henrique vão amar!). Almoço no pier ou em um dos restaurantes na praia. Dica: em setembro as ondas ficam boas para quem quiser tentar surf. Voltar à tarde — fica a 1h de distância."
+    },
+    "2027-09-14": {
+      "type": "universal",
+      "activity": "🏝️ Islands of Adventure",
+      "notes": "PARQUE 4/8 — Prioridade MÁXIMA: Hagrid's Magical Creatures Motorbike Adventure — chegar 1h antes da abertura, é a melhor atração de Orlando! Velocicoaster (melhor coaster da cidade). Jurassic World. Almoço em Three Broomsticks em Hogsmeade. Skull Island: Reign of Kong. Dica: butterbeer quente no Hogsmeade à tarde. Lucas e Henrique vão enlouquecer com o mundo de Harry Potter!"
+    },
+    "2027-09-15": {
+      "type": "outro",
+      "activity": "🏖️ New Smyrna Beach — A Mais Charmosa",
+      "notes": "PRAIA 2 — 1h de Orlando pela I-4 + US-44 sentido leste. Consistentemente apontada como uma das praias mais bonitas da Flórida: areia branca, 27km de extensão, água clara e ambiente tranquilo — bem diferente de Cocoa Beach! Destaques: Smyrna Dunes Park (trilhas, dunas e vida selvagem — tartarugas!), Eco Tour no Indian River Lagoon com o Marine Discovery Center (veem golfinhos e aprendem sobre o lagoon — perfeito para Lucas e Henrique!), Downtown Flagler Ave para almoço (restaurantes locais charmosos, não redes). Setembro é a época ideal: menos turistas, tempo ótimo. Dica: dá para alugar golf cart para explorar a região!"
+    },
+    "2027-09-16": {
+      "type": "universal",
+      "activity": "🌌 Epic Universe",
+      "notes": "PARQUE 5/8 — CHEGAR NA ABERTURA! O maior parque da Universal nos EUA. Estratégia: Super Nintendo World PRIMEIRO (Mario Kart: Bowser's Challenge, Donkey Kong Mine-Cart Madness — Lucas e Henrique vão ENLOUQUECER!). Tarde: How to Train Your Dragon - Isle of Berk (dragões voando pelo parque!) e Wizarding World - Ministry of Magic. Celestial Park à noite iluminado — fotos incríveis de família. Comprar Power-Up Band para coletar moedas no Nintendo World!"
+    },
+    "2027-09-17": {
+      "type": "shopping",
+      "activity": "🛍️ Premium Outlets + Descanso",
+      "notes": "DIA DE RESPIRO — Manhã tranquila, café da manhã demorado, piscina. Tarde: Orlando Premium Outlets no International Drive — Nike, Adidas, Disney, Gap, Polo Ralph Lauren, Coach, tudo com desconto. Bom momento para comprar roupas para os meninos e lembranças do Brasil com calma (sem a correria do último dia). Jantar no I-Drive — muitas opções de restaurantes. Lucas e Henrique: há uma LEGO Store no I-Drive também!"
+    },
+    "2027-09-18": {
+      "type": "universal",
+      "activity": "🌋 Volcano Bay — Parque Aquático Universal",
+      "notes": "PARQUE 6/8 — Volcano Bay é o parque aquático da Universal, com o vulcão Krakatau de 20 andares no centro! TapuTapu (pulseira tecnológica): reservar filas pelo celular sem precisar ficar esperando — revolucionário! Destaques: Krakatau Aqua Coaster (família!), Ko'okiri Body Plunge (queda vertical de 22m), Kopiko Wai Winding River (rio preguiçoso). Setembro quente = dia perfeito para Volcano Bay. Chegue às 9h para pegar lugar nas espreguiçadeiras."
+    },
+    "2027-09-19": {
+      "type": "outro",
+      "activity": "🏡 Lake Wales — Nossa Casa + Bok Tower Gardens",
+      "notes": "DIA ESPECIAL DA VIAGEM! Saída pela manhã (1h de Orlando pela US-27 Sul). Manhã: Bok Tower Gardens (abrir às 9h) — jardim histórico de 1929, Torre Singing Tower, carrilhão toca às 10h e 12h. Trilhas lindas. Almoço em Lake Wales — explorar a cidade com calma, experiência de cidade pequena da Flórida autêntica. Tarde: passear pelo bairro da nossa casa, ver como está tudo, tirar fotos da família na frente da propriedade. Lucas e Henrique marcando território! Voltar para Orlando à noite sem pressa."
+    },
+    "2027-09-20": {
+      "type": "outro",
+      "activity": "🧱 LEGOLAND Florida",
+      "notes": "PARQUE 7/8 — Winter Haven, 1h de Orlando. Um dos melhores LEGOLAND do mundo para crianças! Miniland USA (cidades americanas em LEGO), The Dragon coaster, LEGO Ninjago, Ford Driving School (Lucas e Henrique dirigem carros de verdade!), LEGO Movie World. Parque aquático LEGOLAND incluso — ótimo para o calor de setembro! Dia inteiro garantido. Observação: Peppa Pig Theme Park fica do lado — amanhã é logo ali!"
+    },
+    "2027-09-21": {
+      "type": "outro",
+      "activity": "🐷 Peppa Pig Theme Park Florida",
+      "notes": "PARQUE 8/8 — Peppa Pig Theme Park fica ao lado do LEGOLAND em Winter Haven (mesma região, mesmos 10min de distância de ontem). Parque menor e PERFEITO para crianças pequenas: Muddy Puddles Splash Pad, Daddy Pig's Car Ride, Grampy Rabbit's Sailing Club, George's Dinosaur Adventure. Se Henrique for mais novo, este vai ser o dia favorito dele! Parque menor — dá para combinar com tarde de descanso no hotel."
+    },
+    "2027-09-22": {
+      "type": "outro",
+      "activity": "🏖️ Clearwater Beach — A Mais Bonita da Flórida ⭐",
+      "notes": "PRAIA 3 — A MELHOR! Dica geográfica: vocês estão vindo de Winter Haven (Peppa Pig, ontem) — Clearwater Beach fica só 45min de lá pela I-4! Costa do Golfo do México: água CALMA, quente, cristalina e areia branca ultra-fina. Votada repetidamente como a melhor praia dos EUA. Destaques: Pier 60 (festival de pôr do sol toda noite com músicos, fogo, artesanato), Clearwater Marine Aquarium (Winter the Dolphin, do filme Golfinho Inverno — perfeito para Lucas e Henrique!), parasail e passeio de barco com golfinhos. Almoço no Crabby's Dockside ou Clear Sky Café. PÔR DO SOL no Pier 60 de setembro no Golfo é INESQUECÍVEL — fiquem para ver! Jantar na praia antes de voltar para Orlando (~1h30)."
+    },
+    "2027-09-23": {
+      "type": "shopping",
+      "activity": "🛍️ Compras Finais + Organizar Malas",
+      "notes": "Penúltimo dia. Manhã: última rodada de compras — Premium Outlets ou Disney Springs para lembranças finais. Almoço favorito da viagem (repetir o restaurante que mais gostaram!). Tarde: organizar malas, separar o que vai na bagagem despachada vs carry-on. Verificar limite de peso. Jantar especial de encerramento da viagem. Check-out na manhã seguinte."
+    },
+    "2027-09-24": {
+      "type": "viagem",
+      "activity": "✈️ Partida — Voo de volta para o Brasil",
+      "notes": "Último dia! Café da manhã tranquilo. Check-out do hotel. Devolver carro alugado no MCO (chegar com tempo — devolução + shuttle pode levar 30-40min). Embarcar no voo — chegar 3h antes do internacional. 18 dias inesquecíveis com Lucas e Henrique! Até a próxima Orlando! 🎉"
+    }
+  },
+  "checklist": [
+    {"id":"c1","group":"📑 Documentação","text":"Verificar passaporte de TODOS os 4 (adultos + Lucas + Henrique)","done":false,"priority":"alta"},
+    {"id":"c2","group":"📑 Documentação","text":"Solicitar visto americano B1/B2 para adultos (e B2 para crianças se necessário)","done":false,"priority":"alta"},
+    {"id":"c3","group":"📑 Documentação","text":"Contratar seguro viagem para 4 pessoas — 18 dias — incluir cobertura furacão!","done":false,"priority":"alta"},
+    {"id":"c4","group":"✈️ Voos","text":"Pesquisar e comprar passagens GRU → MCO (07/Set/2027) para 4 pessoas","done":false,"priority":"alta"},
+    {"id":"c5","group":"✈️ Voos","text":"Pesquisar e comprar passagens MCO → GRU (24/Set/2027) para 4 pessoas","done":false,"priority":"alta"},
+    {"id":"c6","group":"🏨 Hotel","text":"Decidir tipo de acomodação: suite familiar (2 quartos) ou resort","done":false,"priority":"alta"},
+    {"id":"c7","group":"🏨 Hotel","text":"Reservar hotel para 18 noites (7 a 24 Set) para 4 pessoas","done":false,"priority":"alta"},
+    {"id":"c8","group":"🏰 Disney","text":"Comprar ingressos Disney: MK (1 dia) + EPCOT (1 dia) + Typhoon Lagoon (se quiser)","done":false,"priority":"alta"},
+    {"id":"c9","group":"🏰 Disney","text":"Criar conta My Disney Experience para todos (linkar ingressos)","done":false,"priority":"alta"},
+    {"id":"c10","group":"🏰 Disney","text":"Reservar restaurantes Disney 180 dias antes = MARÇO/2027! Le Cellier, Via Napoli...","done":false,"priority":"alta"},
+    {"id":"c11","group":"🏰 Disney","text":"Confirmar datas do EPCOT Food & Wine Festival em Set/2027","done":false,"priority":"media"},
+    {"id":"c12","group":"🎢 Universal","text":"Comprar ingressos Universal: Studios + Islands + Epic Universe + Volcano Bay (4 dias)","done":false,"priority":"alta"},
+    {"id":"c13","group":"🎢 Universal","text":"Pesquisar Express Pass Universal — especialmente para Epic Universe","done":false,"priority":"media"},
+    {"id":"c14","group":"🎢 Universal","text":"Comprar Power-Up Bands para Super Nintendo World (Epic Universe) — 1 por pessoa","done":false,"priority":"baixa"},
+    {"id":"c15","group":"🐬 Discovery Cove","text":"RESERVAR Discovery Cove — nadar com golfinhos (11/Set) — ESGOTA MESES ANTES!","done":false,"priority":"alta"},
+    {"id":"c16","group":"🐬 Discovery Cove","text":"Escolher pacote Discovery Cove: com ou sem nado com golfinhos (caro mas único)","done":false,"priority":"alta"},
+    {"id":"c17","group":"🧱 LEGOLAND + Peppa","text":"Comprar ingressos LEGOLAND Florida (20/Set)","done":false,"priority":"media"},
+    {"id":"c18","group":"🧱 LEGOLAND + Peppa","text":"Comprar ingressos Peppa Pig Theme Park Florida (21/Set)","done":false,"priority":"media"},
+    {"id":"c19","group":"🐊 Natureza","text":"Reservar Wild Florida Airboat (09/Set)","done":false,"priority":"media"},
+    {"id":"c20","group":"🏡 Lake Wales","text":"Verificar situação da casa antes da viagem","done":false,"priority":"alta"},
+    {"id":"c21","group":"🏡 Lake Wales","text":"Pesquisar restaurantes em Lake Wales para almoço do dia 19/Set","done":false,"priority":"baixa"},
+    {"id":"c22","group":"💳 Financeiro","text":"Abrir conta Wise, Nomad ou C6 Global para dólar no exterior","done":false,"priority":"alta"},
+    {"id":"c23","group":"💳 Financeiro","text":"Avisar banco sobre viagem de 18 dias nos EUA para 4 pessoas","done":false,"priority":"alta"},
+    {"id":"c24","group":"💳 Financeiro","text":"Verificar limite dos cartões — 18 dias de família tem custo alto!","done":false,"priority":"media"},
+    {"id":"c25","group":"🚗 Transporte","text":"Reservar carro alugado para 18 dias (SUV ou minivan para família de 4)","done":false,"priority":"alta"},
+    {"id":"c26","group":"📱 Tecnologia","text":"Contratar chip/eSIM EUA com dados para 18 dias","done":false,"priority":"media"},
+    {"id":"c27","group":"📱 Tecnologia","text":"Baixar apps: My Disney Experience, Universal, Volcano Bay TapuTapu, Google Maps offline","done":false,"priority":"baixa"},
+    {"id":"c28","group":"🧳 Bagagem","text":"Roupas leves (setembro 34°C) + capa de chuva leve para chuvas de tarde","done":false,"priority":"baixa"},
+    {"id":"c29","group":"🧳 Bagagem","text":"Protetor solar FPS 50+ para 4 pessoas (muito calor em setembro!)","done":false,"priority":"baixa"},
+    {"id":"c30","group":"🧳 Bagagem","text":"Adaptadores de tomada Tipo A (EUA) — pelo menos 2 unidades","done":false,"priority":"baixa"}
+  ],
+  "notes": [
+    {
+      "id":"n1",
+      "title":"🗓️ Roteiro Completo — 18 Dias em Setembro",
+      "content":"REGRA DE OURO: Nunca 2 parques grandes em dias seguidos.\nSempre 1 dia de respiro entre parques para recarregar!\n\nDia 01 (07/Set): Chegada ✈️\nDia 02 (08/Set): 🏰 PARQUE 1 — Magic Kingdom\nDia 03 (09/Set): 🐊 RESPIRO — Airboat Wild Florida + Winter Park Boat Tour\nDia 04 (10/Set): 🌍 PARQUE 2 — EPCOT (Food & Wine Festival!)\nDia 05 (11/Set): 🐬 Discovery Cove — Golfinhos (dia relaxado)\nDia 06 (12/Set): 🎢 PARQUE 3 — Universal Studios Florida\nDia 07 (13/Set): 😴 RESPIRO — Descanso + Disney Springs\nDia 08 (14/Set): 🏝️ PARQUE 4 — Islands of Adventure\nDia 09 (15/Set): 🛍️ RESPIRO — Premium Outlets + Descanso\nDia 10 (16/Set): 🌌 PARQUE 5 — Epic Universe\nDia 11 (17/Set): 😴 RESPIRO — Piscina total\nDia 12 (18/Set): 🌋 PARQUE 6 — Volcano Bay\nDia 13 (19/Set): 🏡 RESPIRO — Lake Wales + Bok Tower Gardens\nDia 14 (20/Set): 🧱 PARQUE 7 — LEGOLAND Florida\nDia 15 (21/Set): 🐷 PARQUE 8 — Peppa Pig Theme Park\nDia 16 (22/Set): 😴 DIA LIVRE — Piscina ou SeaWorld (decidir na hora)\nDia 17 (23/Set): 🛍️ Compras finais + organizar malas\nDia 18 (24/Set): Partida ✈️\n\nTOTAL: 8 parques + 4 dias de respiro + 1 Discovery Cove + 1 Lake Wales + compras + chegada/partida",
+      "tags":"roteiro, visão geral, 18 dias, setembro, lucas, henrique",
+      "created":"2026-04-21T00:00:00.000Z",
+      "updated":"2026-04-21T00:00:00.000Z"
+    },
+    {
+      "id":"n2",
+      "title":"☀️ Setembro em Orlando — Vantagens e Cuidados",
+      "content":"POR QUE SETEMBRO É ÓTIMO:\n✅ Pós-Labor Day (6/Set): filas menores que julho/agosto\n✅ Preços de hotel e passagem mais baixos\n✅ EPCOT Food & Wine Festival começa em setembro!\n✅ Parques aquáticos no auge (34°C)\n✅ Dias longos (sol até ~20h)\n✅ Volcano Bay sem fila de verão\n\nCLIMA:\n- Temperatura: 28-34°C durante o dia\n- Manhãs: ensolaradas e quentes\n- Tardes: chuvas rápidas ~30min (quase diárias)\n- Solução: pausar num restaurante durante a chuva\n- Levar capa de chuva ultraleve na mochila\n\n⚠️ TEMPORADA DE FURACÕES:\n- Setembro = pico da temporada\n- Probabilidade baixa de impacto, mas existe\n- OBRIGATÓRIO: seguro viagem com cobertura de furacão/cancelamento\n- Monitorar: nhc.noaa.gov nas semanas antes\n\nO QUE MUDOU vs JANEIRO:\n❌ Manatees NÃO disponíveis (água quente = se dispersam)\n❌ Snowcat Ridge fechado (inverno)\n✅ Volcano Bay/Typhoon Lagoon muito melhores\n✅ Discovery Cove com água quente\n✅ EPCOT Food & Wine Festival\n✅ Menos filas pós-Labor Day",
+      "tags":"setembro, clima, furacão, dicas",
+      "created":"2026-04-21T00:00:00.000Z",
+      "updated":"2026-04-21T00:00:00.000Z"
+    },
+    {
+      "id":"n3",
+      "title":"🌋 Volcano Bay — Guia Completo",
+      "content":"Parque aquático da Universal Orlando — Dia 12 (18/Set)\n\nO SISTEMA TAPUtapu:\n- Pulseira tecnológica inclusa no ingresso\n- Reserva filas pelo celular — sem ficar esperando!\n- Recebe notificação quando está na hora de embarcar\n- Funciona pelo app Universal Orlando\n\nATRAÇÕES PRINCIPAIS:\n🌋 Krakatau Aqua Coaster — atracao principal, vulcão de 20 andares, FAMÍLIA!\n💧 Ko'okiri Body Plunge — queda quase vertical de 22m (adultos)\n🌊 Puihi of Maku Puihi — raft tube para família\n🏞️ Kopiko Wai Winding River — rio preguiçoso tranquilo\n🐠 Tot Tiki Reef — área para crianças pequenas (Henrique)\n🌊 Waturi Beach — piscina de ondas enorme\n\nDICAS:\n- Chegar às 9h para pegar espreguiçadeira\n- Aluguel de cabanas disponível (caro mas confortável)\n- Levar protetor solar 100+ (exposição intensa)\n- Garrafa d'água — hidratação constante no calor\n- Setembro = calor máximo = dia perfeito para água!\n- Lucas e Henrique vão adorar!",
+      "tags":"volcano bay, universal, aquático, tapuTapu",
+      "created":"2026-04-21T00:00:00.000Z",
+      "updated":"2026-04-21T00:00:00.000Z"
+    },
+    {
+      "id":"n4",
+      "title":"🌌 Epic Universe — Estratégia de Dia Único",
+      "content":"Epic Universe — Dia 10 (16/Set)\nAbriu Maio/2025 — 5 mundos, 50+ experiências\nChegar 1H ANTES da abertura!\n\nORDEM RECOMENDADA (1 dia):\n\n08:30 — Entrar no parque na abertura\n08:30-09:30: SUPER NINTENDO WORLD (antes de encher!)\n  → Mario Kart: Bowser's Challenge PRIMEIRO\n  → Donkey Kong Mine-Cart Madness\n  → Power-Up Band: coletar moedas e lutar contra bosses\n  → Yoshi's Adventure (Lucas e Henrique!)\n\n09:30-11:30: HOW TO TRAIN YOUR DRAGON — Isle of Berk\n  → Dragões voando pelo parque (efeito incrível)\n  → Hiccup's Wing Gliders\n\n11:30-12:30: Almoço em Celestial Park (hub central)\n\n12:30-14:30: WIZARDING WORLD — Ministry of Magic\n  → Paris dos anos 90\n  → Julgamento da Umbridge\n  → Muito diferente de Hogsmeade/Diagon Alley!\n\n14:30-16:00: DARK UNIVERSE\n  → Frankenstein, monstros clássicos\n  → Avaliar para crianças sensíveis ao susto\n\n16:00-18:00: Repetir favoritos com TapuTapu\n\nNOITE: Celestial Park iluminado — fotos de família!\n\nDICA IMPORTANTE:\n- Comprar Express Pass se o orçamento permitir\n- Power-Up Band: ~$40/pessoa — VALE MUITO para crianças",
+      "tags":"epic universe, nintendo, harry potter, estratégia",
+      "created":"2026-04-21T00:00:00.000Z",
+      "updated":"2026-04-21T00:00:00.000Z"
+    },
+    {
+      "id":"n5",
+      "title":"🧱🐷 LEGOLAND + Peppa Pig — Guia (Winter Haven)",
+      "content":"Ambos ficam em Winter Haven — 1h de Orlando\nDias 14 e 15 (20 e 21/Set)\nSão parques ADJACENTES — mesma saída de rodovia!\n\nLEGOLAND FLORIDA — Dia 14 (20/Set):\n- Para crianças de 2-12 anos é PERFEITO\n- Miniland USA: cidades americanas em LEGO (incrível!)\n- The Dragon coaster (família)\n- LEGO Ninjago: The Ride\n- Ford Driving School (Lucas e Henrique dirigem!)\n- LEGO Movie World\n- Parque aquático LEGOLAND incluso — setembro = obrigatório!\n- Preço: ~$110-130/pessoa\n- Site: legoland.com/florida\n\nPEPPA PIG THEME PARK — Dia 15 (21/Set):\n- Abriu em 2022, ao lado do LEGOLAND\n- Parque menor (3-4h) — perfeito para crianças pequenas\n- Muddy Puddles Splash Pad\n- Daddy Pig's Car Ride\n- Grampy Rabbit's Sailing Club\n- George's Dinosaur Adventure\n- Grandpa Pig's Boat Ride\n- Preço: ~$40-60/pessoa\n- Site: peppapigthem eparkorlando.com\n\nDICA: Se Henrique for mais novo, Peppa Pig vai ser o dia FAVORITO dele!\nO ingresso de LEGOLAND dá desconto no Peppa Pig (verificar combos).",
+      "tags":"legoland, peppa pig, winter haven, crianças",
+      "created":"2026-04-21T00:00:00.000Z",
+      "updated":"2026-04-21T00:00:00.000Z"
+    },
+    {
+      "id":"n6",
+      "title":"🏡 Lake Wales — Nossa Casa (19/Set)",
+      "content":"Dia 13 da viagem — Dia de Respiro + Visita especial\n\nROTEIRO:\nMANHÃ: Bok Tower Gardens\n  → 1151 Tower Blvd, Lake Wales, FL 33853\n  → Abrir às 9h\n  → Carrilhão toca às 10h e 12h\n  → ~2-3h de visita\n  → ~$20 adulto, $10 criança\n  → boktowergardens.org\n\nALMOÇO: Restaurante em Lake Wales\n  → Pesquisar opções locais (não redes)\n  → Comer onde os moradores comem!\n\nTARDE: Nossa propriedade\n  → Passear pelo bairro\n  → Fotos da família na frente da casa\n  → Lucas e Henrique marcando território!\n  → Ver como está o entorno\n  → Momento único: nossa família, nossa casa nos EUA\n\nVOLTA: Lake Wales → Orlando: ~1h pela US-27\n\nOBSERVAÇÃO:\nLake Wales fica pertinho de Winter Haven (LEGOLAND/Peppa).\nSe quiser, pode combinar a passagem pela casa com o dia do LEGOLAND (20/Set) — são só 30-40min de distância um do outro.",
+      "tags":"lake wales, casa, bok tower, família, especial",
+      "created":"2026-04-21T00:00:00.000Z",
+      "updated":"2026-04-21T00:00:00.000Z"
+    },
+    {
+      "id":"n7",
+      "title":"🏖️ Guia das 3 Praias — Dias 7, 9 e 16",
+      "content":"PRAIA 1 — COCOA BEACH (13/Set — Dia 7)\nCosta do Atlântico | 1h de Orlando pela SR-528\nMelhor para: ondas, surf, clima animado\n\n→ Como chegar: SR-528 East (Beachline Expressway)\n→ Estacionamento gratuito: Lori Wilson Park\n→ Cocoa Beach Pier: 1,3km sobre o oceano, restaurantes, bar\n→ Ron Jon Surf Shop: loja icônica 24h (as crianças adoram!)\n→ Aulas de surf disponíveis na praia\n→ Boa infra: banheiros, chuveiros, lanchonetes\n→ Setembro tem ondas boas para surf e bodyboard!\n→ Site: cocoabeach.com\n\n──────────────────────────\n\nPRAIA 2 — NEW SMYRNA BEACH (15/Set — Dia 9)\nCosta do Atlântico | 1h pela I-4 + US-44\nMelhor para: beleza natural, tranquilidade, charme local\n\n→ Como chegar: I-4 East → US-44 East\n→ 27km de areia branca praticamente sem multidão\n→ Smyrna Dunes Park: trilhas, dunas e tartarugas!\n→ Marine Discovery Center: eco tour no Indian River Lagoon\n  (avistamento de golfinhos — Lucas e Henrique AMAM)\n→ Downtown Flagler Ave: restaurantes locais charmosos\n→ Setembro: menos turistas, tempo perfeito\n→ Dica: alugar golf cart para explorar a região!\n→ Site: visitnsbfl.com\n\n──────────────────────────\n\nPRAIA 3 — CLEARWATER BEACH ⭐ (22/Set — Dia 16)\nCosta do Golfo do México | 45min de Winter Haven!\nMelhor para: beleza, água calma, pôr do sol inesquecível\n\n→ DICA GEOGRÁFICA: Dia 15 é Peppa Pig em Winter Haven.\n  Clearwater fica a só 45min de lá pela SR-60 West!\n  Em vez de voltar para Orlando, ir direto para Clearwater!\n→ Como chegar de Winter Haven: SR-60 West direto\n→ De Orlando: I-4 West + SR-60 (~1h30)\n→ Água do Golfo: calma, quente, cristalina, sem ondas fortes\n→ Areia branca ultra-fina — votada melhor praia dos EUA\n→ Pier 60: festival de pôr do sol todo dia\n  (músicos, fogo, artesanato — gratuito!)\n→ Clearwater Marine Aquarium: Winter the Dolphin\n  (do filme Golfinho Inverno — IMPERDÍVEL com crianças!)\n→ Restaurantes: Crabby's Dockside, Clear Sky Café\n→ Atividades: parasail, barco com golfinhos, jet ski\n→ PÔR DO SOL no Golfo em setembro = INESQUECÍVEL\n  Fiquem para ver antes de voltar para Orlando!\n→ Site: visitstpeteclearwater.com",
+      "tags":"praias, cocoa beach, new smyrna, clearwater, família, golfo, atlântico",
+      "created":"2026-04-21T00:00:00.000Z",
+      "updated":"2026-04-21T00:00:00.000Z"
+    }
+  ]
+}
