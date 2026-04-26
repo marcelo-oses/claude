@@ -1,8 +1,10 @@
 import { gramado2026 } from './gramado2026';
 import { orlando2027 } from './orlando2027';
+import { comandatuba2026 } from './comandatuba2026';
 import type { TripConfig, TripData } from '../types';
 
 export const TRIP_CONFIGS: TripConfig[] = [
+  comandatuba2026,
   gramado2026,
   orlando2027,
 ];
