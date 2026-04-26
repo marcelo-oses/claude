@@ -1,9 +1,10 @@
 import { gramado2026 } from './gramado2026';
+import { orlando2027 } from './orlando2027';
 import type { TripConfig, TripData } from '../types';
 
 export const TRIP_CONFIGS: TripConfig[] = [
   gramado2026,
-  // Adicione novas viagens aqui, ex: orlando2027
+  orlando2027,
 ];
 
 export function getTripConfig(id: string): TripConfig | undefined {
