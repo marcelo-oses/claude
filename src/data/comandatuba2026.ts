@@ -61,6 +61,7 @@ export const comandatuba2026: TripConfig = {
   groupDesc: '2 adultos + Lucas (5) e Henrique (4)',
   tripDate: '2026-06-07T00:00:00',
   headerGradient: 'linear-gradient(140deg, #0EA5E9 0%, #06B6D4 50%, #14B8A6 100%)',
+  seedVersion: 1,
 
   budgetCategories: [
     { id: 'hospedagem',  icon: '🏨', name: 'Resort (All-Inclusive)', color: '#22C55E' }

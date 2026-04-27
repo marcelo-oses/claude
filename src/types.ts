@@ -102,6 +102,7 @@ export interface TripData {
   research: ResearchData;
   checklist: ChecklistData;
   lastSaved?: string;
+  _seedVersion?: number;
 }
 
 export interface BudgetCatConfig {
@@ -152,4 +153,7 @@ export interface TripConfig {
   };
   suggestedItinerary: ItineraryData;
   defaultData: TripData;
+  // Bump this when _voos/_hotel/_carro defaults change so existing
+  // Firestore docs are refreshed from the new template.
+  seedVersion?: number;
 }
