@@ -116,7 +116,7 @@ export function Dashboard({ data, config, countdown }: Props) {
           const m       = parseBRL(catData?.meta);
           const p       = milhas ? m : parseBRL(catData?.pago);
           const pct     = milhas ? 100 : (m > 0 ? Math.min(100, Math.round(p / m * 100)) : 0);
-          const cls     = milhas ? 'ok' : (pct >= 100 ? 'over' : pct >= 80 ? 'warn' : 'ok');
+          const cls     = milhas || pct === 100 ? 'ok' : (pct > 100 ? 'over' : pct >= 80 ? 'warn' : 'ok');
 
           return (
             <div

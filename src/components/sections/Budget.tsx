@@ -92,15 +92,17 @@ export function Budget({ data, config, updateData, showToast }: Props) {
 
   const barFill = (pct: number, milhas?: boolean) => {
     if (milhas) return 'ok';
-    if (pct >= 100) return 'over';
-    if (pct >= 80)  return 'warn';
+    if (pct === 100) return 'ok';
+    if (pct > 100)   return 'over';
+    if (pct >= 80)   return 'warn';
     return 'ok';
   };
 
   const badgeClass = (pct: number, milhas?: boolean) => {
     if (milhas) return 'badge-milhas';
-    if (pct >= 100) return 'badge-red';
-    if (pct >= 80)  return 'badge-amber';
+    if (pct === 100) return 'badge-green';
+    if (pct > 100)   return 'badge-red';
+    if (pct >= 80)   return 'badge-amber';
     if (pct > 0)    return 'badge-green';
     return 'badge-gray';
   };
