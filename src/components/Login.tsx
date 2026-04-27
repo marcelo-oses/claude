@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { auth, googleProvider, signInWithRedirect } from '../firebase';
+import { auth, googleProvider, signInWithPopup, signInWithRedirect } from '../firebase';
 
 export function Login(_: { onLogin: () => void }) {
   const [loading, setLoading] = useState(false);
@@ -8,6 +8,25 @@ export function Login(_: { onLogin: () => void }) {
   async function handleGoogleLogin() {
     setLoading(true);
     setError('');
+    // Tenta popup primeiro (cookies same-origin, contorna ITP do iOS).
+    // Se o popup falhar/for bloqueado, cai para redirect como fallback.
+    try {
+      await signInWithPopup(auth, googleProvider);
+      // onAuthStateChanged em App.tsx atualiza a tela
+      return;
+    } catch (e: unknown) {
+      const code = (e as { code?: string })?.code || '';
+      const popupBlocked =
+        code === 'auth/popup-blocked' ||
+        code === 'auth/popup-closed-by-user' ||
+        code === 'auth/operation-not-supported-in-this-environment' ||
+        code === 'auth/cancelled-popup-request';
+      if (!popupBlocked) {
+        setError('Erro ao fazer login com Google. Tente novamente.');
+        setLoading(false);
+        return;
+      }
+    }
     try {
       await signInWithRedirect(auth, googleProvider);
     } catch {

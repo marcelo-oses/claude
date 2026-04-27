@@ -2,6 +2,7 @@ import { initializeApp } from 'firebase/app';
 import {
   initializeAuth,
   GoogleAuthProvider,
+  signInWithPopup,
   signInWithRedirect,
   getRedirectResult,
   signOut as fbSignOut,
@@ -35,6 +36,6 @@ export const auth = initializeAuth(app, {
 export const db = getFirestore(app);
 export const googleProvider = new GoogleAuthProvider();
 
-export { onAuthStateChanged, signInWithRedirect, getRedirectResult, fbSignOut };
+export { onAuthStateChanged, signInWithPopup, signInWithRedirect, getRedirectResult, fbSignOut };
 export { doc, setDoc, onSnapshot, getDoc };
 export type { User };
