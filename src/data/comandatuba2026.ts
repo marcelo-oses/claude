@@ -5,7 +5,7 @@ const suggestedItinerary = {
     manha: '✈️ Voo Azul CGH → UNA 14:05 → 16:10 (direto, 2h05)\nChegar em Congonhas ~12:00 | Despachar bagagem | Almoço no aeroporto',
     tarde: '🛬 Desembarque em Una (UNA) ~16:10 | Traslado do aeroporto até o resort (curto, ilha colada)\nCheck-in no Transamerica Comandatuba (após 15:00) — Apt Standard',
     noite: '🍽️ Jantar All-Inclusive no resort | Reconhecer a estrutura com Lucas (5) e Henrique (4) | Descanso para a primeira noite na ilha 🌴',
-    notas: '✅ RESERVA CONFIRMADA: RES128439-4820 (Pedido ZRP0033062) | Total pago: R$ 19.768,06 (cartão de crédito) | Apt Standard | All Inclusive | Cancelamento gratuito\n✈️ VOO IDA: Azul direto — CGH 14:05 → UNA 16:10 — Dom 07/06/2026\n👨‍👩‍👦‍👦 Henrique faz 4 anos exatamente no dia da chegada (06/06/2022)! Combinar comemoração no resort 🎂'
+    notas: '✅ HOTEL: Transamerica Comandatuba — Reserva RES128439-4820 (Pedido ZRP0033062) | R$ 19.768,06 pagos (cartão) | Apt Standard | All Inclusive | Cancelamento gratuito\n✈️ VOO IDA: Azul AD 2464 — CGH 14:05 → UNA 16:10 — Dom 07/06/2026 | Loc: ANLQNA | Tarifa T128C1BG | A320, Classe T, Família F+\n👨‍👩‍👧 Passageiros: Marcelo, Juliana, Lucas (25/10/20), Henrique (06/06/22)\n🎂 Henrique faz 4 anos no dia 06/06 (véspera!). Combinar comemoração no resort.'
   },
   dia2: {
     manha: 'Café da manhã All-Inclusive 🥐 | Praia em frente ao resort — areia branca e mar morno da Bahia 🏖️',
@@ -47,7 +47,7 @@ const suggestedItinerary = {
     manha: '☕ Café da manhã | Check-out até 12:00 | Despedida do resort 👋',
     tarde: '✈️ Voo Azul UNA → CGH 16:50 → 19:05 (direto, 2h15)\nTraslado até o aeroporto de Una | Despachar bagagem',
     noite: '🛬 Chegada em Congonhas ~19:05 | Traslado para casa | Crianças cansadas e felizes 😴❤️',
-    notas: '✈️ VOO VOLTA: Azul direto — UNA 16:50 → CGH 19:05 — Dom 14/06/2026\nCheck-out até 12:00 — pedir late check-out se necessário (sujeito à disponibilidade).'
+    notas: '✈️ VOO VOLTA: Azul AD 2465 — UNA 16:50 → CGH 19:05 — Dom 14/06/2026 | Loc: ANLQNA | Tarifa O2281RBG | A320, Classe O, Família F+\nCheck-out até 12:00 — pedir late check-out se necessário (sujeito à disponibilidade).'
   }
 };
 
@@ -63,13 +63,7 @@ export const comandatuba2026: TripConfig = {
   headerGradient: 'linear-gradient(140deg, #0EA5E9 0%, #06B6D4 50%, #14B8A6 100%)',
 
   budgetCategories: [
-    { id: 'passagens',   icon: '✈️', name: 'Passagens Aéreas',     color: '#0EA5E9' },
-    { id: 'hospedagem',  icon: '🏨', name: 'Resort (All-Inclusive)', color: '#14B8A6' },
-    { id: 'parques',     icon: '🎡', name: 'Passeios Extras',      color: '#8B5CF6' },
-    { id: 'alimentacao', icon: '🍽️', name: 'Alimentação Extra',    color: '#F59E0B' },
-    { id: 'compras',     icon: '🛍️', name: 'Compras',              color: '#EC4899' },
-    { id: 'transporte',  icon: '🚗', name: 'Transporte / Traslados', color: '#10B981' },
-    { id: 'outros',      icon: '💡', name: 'Outros / Imprevistos', color: '#6B7C6B' }
+    { id: 'hospedagem',  icon: '🏨', name: 'Resort (All-Inclusive)', color: '#22C55E' }
   ],
 
   days: [
@@ -182,14 +176,16 @@ export const comandatuba2026: TripConfig = {
       outros:      { meta: '', pago: '', notas: '' },
       _voos: {
         ida: {
-          numero: 'Azul (direto)', origem: 'CGH', destino: 'UNA',
-          data: '07/06/2026', partida: '14:05', chegada: '16:10',
-          duracao: '2h05 direto', localizador: 'ZRP0033062', pagamento: 'Pacote Transamerica'
+          numero: 'Azul AD 2464', origem: 'CGH (São Paulo)', destino: 'UNA (Comandatuba)',
+          data: 'Dom, 07/06/2026', partida: '14:05', chegada: '16:10',
+          duracao: '2h05 direto · Avião A320 · Classe T', localizador: 'ANLQNA',
+          pagamento: 'Pacote Transamerica · Tarifa T128C1BG · Família F+'
         },
         volta: {
-          numero: 'Azul (direto)', origem: 'UNA', destino: 'CGH',
-          data: '14/06/2026', partida: '16:50', chegada: '19:05',
-          duracao: '2h15 direto', localizador: 'ZRP0033062', pagamento: 'Pacote Transamerica'
+          numero: 'Azul AD 2465', origem: 'UNA (Comandatuba)', destino: 'CGH (São Paulo)',
+          data: 'Dom, 14/06/2026', partida: '16:50', chegada: '19:05',
+          duracao: '2h15 direto · Avião A320 · Classe O', localizador: 'ANLQNA',
+          pagamento: 'Pacote Transamerica · Tarifa O2281RBG · Família F+'
         }
       },
       _hotel: {
