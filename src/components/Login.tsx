@@ -1,21 +1,9 @@
-import { useState, useEffect } from 'react';
-import { auth, googleProvider, signInWithRedirect, getRedirectResult } from '../firebase';
+import { useState } from 'react';
+import { auth, googleProvider, signInWithRedirect } from '../firebase';
 
-export function Login({ onLogin }: { onLogin: () => void }) {
+export function Login(_: { onLogin: () => void }) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
-
-  useEffect(() => {
-    setLoading(true);
-    getRedirectResult(auth)
-      .then(result => {
-        if (result?.user) onLogin();
-      })
-      .catch(() => {
-        setError('Erro ao fazer login com Google. Tente novamente.');
-      })
-      .finally(() => setLoading(false));
-  }, [onLogin]);
 
   async function handleGoogleLogin() {
     setLoading(true);

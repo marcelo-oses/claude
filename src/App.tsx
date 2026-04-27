@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { auth, onAuthStateChanged } from './firebase';
+import { auth, onAuthStateChanged, getRedirectResult } from './firebase';
 import type { User } from './firebase';
 import { Login } from './components/Login';
 import { TripList } from './components/TripList';
@@ -15,11 +15,18 @@ export default function App() {
   const [activeTripId, setActiveTripId] = useState<string | null>(null);
 
   useEffect(() => {
+    // Resolver o resultado do redirect ANTES de qualquer decisão de tela.
+    // Em iOS Chrome o handshake pode falhar se onAuthStateChanged disparar
+    // (com user=null) antes de getRedirectResult terminar.
+    let cancelled = false;
+    getRedirectResult(auth).catch(() => { /* ignore — onAuthStateChanged segue */ });
+
     const unsub = onAuthStateChanged(auth, (u) => {
+      if (cancelled) return;
       setUser(u);
       setScreen(u ? 'trips' : 'login');
     });
-    return unsub;
+    return () => { cancelled = true; unsub(); };
   }, []);
 
   if (screen === 'loading') {
