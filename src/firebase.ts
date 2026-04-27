@@ -16,7 +16,10 @@ import { getFirestore, doc, setDoc, onSnapshot, getDoc } from 'firebase/firestor
 
 const firebaseConfig = {
   apiKey: "AIzaSyC2Hyj1EtGudoF1iIFIvvuxM5CJ_4Q6-VM",
-  authDomain: "trip-planner-cde86.firebaseapp.com",
+  // authDomain aponta para o próprio domínio do app (via reverse proxy
+  // configurado em vercel.json). Isso torna o Firebase Auth same-origin
+  // com o app e contorna o ITP do iOS Chrome.
+  authDomain: "claude-flax-psi.vercel.app",
   projectId: "trip-planner-cde86",
   storageBucket: "trip-planner-cde86.firebasestorage.app",
   messagingSenderId: "754142749377",
